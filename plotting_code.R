@@ -59,11 +59,11 @@
         
         par(mfcol = c(2,2))
         
-        ## Plot 1
+        ## Plot 4.1
         plot(power_con$Time, as.numeric(power_con$GlobalActivePower), 
              xlab = "", ylab = "Global Active Power", type = "l")
         
-        ## Plot 2
+        ## Plot 4.2
         plot(power_con$Time, power_con$SubMetering1, type = "n",
              xlab = "", ylab = "Energy sub metering")
         with(power_con, lines(Time, as.numeric(power_con$SubMetering1)))
@@ -74,11 +74,11 @@
         legend("topright", lty = 1, col = c("black", "red", "blue"),
                legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
         
-        ## Plot 3
+        ## Plot 4.3
         plot(power_con$Time, as.numeric(power_con$Voltage), 
              xlab = "datetime", ylab = "Voltage", type = "l")
         
-        ## Plot 4
+        ## Plot 4.4
         plot(power_con$Time, as.numeric(power_con$GlobalReactivePower), 
              xlab = "datetime", ylab = "Global_reactive_power", type = "l")
         
