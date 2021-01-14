@@ -74,7 +74,6 @@
         legend("topright", lty = 1, col = c("black", "red", "blue"),
                legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
         
-        
         ## Plot 3
         plot(power_con$Time, as.numeric(power_con$Voltage), 
              xlab = "datetime", ylab = "Voltage", type = "l")
