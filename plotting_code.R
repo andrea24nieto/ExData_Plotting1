@@ -83,4 +83,3 @@
              xlab = "datetime", ylab = "Global_reactive_power", type = "l")
         
         dev.off()
-        
